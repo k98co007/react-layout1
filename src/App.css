@@ -1,0 +1,127 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #0dee0d;
+}
+
+.header {
+  display: flex;
+  justify-content:center; 
+  align-items : center;
+  height: 60px;
+  flex-shrink: 0;
+  flex-direction: row;
+  background-color: #ffeeee;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: #0515fa;
+}
+
+.sidebar {
+  background-color: #eeffee; /* Sample background color */
+  width: 150px; /* Sample width */
+  padding: 20px;
+  box-shadow: 0 0 0 rgba(0,0,0,0.1);
+  position: relative;
+  overflow-y: auto;
+  overflow: auto;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+  position: relative;
+  overflow: auto;
+  background-color: #fa05d1;
+}
+
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  background-color: #a4a4a4;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding: 10px;
+  position: relative;
+}
+
+.resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+.home {
+  display: flex;
+  justify-content:center; 
+  align-items : center;
+  background-color: #d53a3a;
+  height: 100%;
+  width: 100%;
+}
+
+.news {
+  background-color: #f5a105;
+  display: flex;
+  justify-content:center; 
+  align-items : center;
+  height: 100%;
+  width: 100%;
+}
+
+.settings {
+  background-color: #f7df07;
+  display: flex;
+  justify-content:center; 
+  align-items : center;
+  height: 100%;
+  width: 100%;
+}
+
+.account {
+  background-color: #06f706;
+  display: flex;
+  justify-content:center; 
+  align-items : center;
+  height: 100%;
+  width: 100%;
+}
+
+.rightContent{
+  display: flex;
+  flex: 1;
+}
+
+.menuTitle {
+  background-color: #0ad9f5;
+  height: 100%;
+  width: 100%;
+}
+
+.menuName {
+  background-color: #f70676;
+  height: 100%;
+  width: 100%;
+}
+
+.menuDescription {
+  background-color: #f7e706;
+  height: 100%;
+  width: 100%;
+}
+
+.menuTag {
+  background-color: #f70606;
+  height: 100%;
+  width: 100%;
+}
