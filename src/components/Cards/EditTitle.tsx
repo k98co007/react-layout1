@@ -16,7 +16,7 @@ const EditTitle: React.FC<Props> = ({ onClose}) => {
 
   return (
     <div className='menuTitle'>
-      <div onClick={() => handleClose()}>back</div>
+      <div onClick={() => handleClose()}>&lt; back</div>
       <br/>
       <br/>
       <div>This is EditTitle.tsx</div>

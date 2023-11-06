@@ -16,7 +16,7 @@ const EditTag: React.FC<Props> = ({ onClose}) => {
 
   return (
     <div className='menuTag'>
-      <div onClick={() => handleClose()}>back</div>
+      <div onClick={() => handleClose()}>&lt; back</div>
       <br/>
       <div>This is EditTag.tsx</div>
     </div>

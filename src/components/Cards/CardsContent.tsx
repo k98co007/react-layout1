@@ -2,7 +2,6 @@ import React, {useState, useRef, useEffect} from 'react';
 import CardList from './CardList'; // This should be your component containing the list of cards
 import CardDetails from './CardDetail'; // This should be your component for card details
 import CardMenu from './CardMenu';
-import EditMode from './EditMode';
 import EditTitle from './EditTitle';
 import EditName from './EditName';
 import EditDescription from './EditDescription';

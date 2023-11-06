@@ -16,7 +16,7 @@ const EditDescription: React.FC<Props> = ({ onClose}) => {
 
   return (
     <div className='menuDescription'>
-      <div onClick={() => handleClose()}>back</div>
+      <div onClick={() => handleClose()}>&lt; back</div>
       <br/>
       <div>This is EditDescription.tsx</div>
     </div>

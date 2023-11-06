@@ -1,21 +1,26 @@
 import React from 'react';
-import { MenuProvider } from './MenuContext'; // import the provider
-import Header from './components/Layout/Header';
-import Sidebar from './components/Layout/Sidebar';
-import ContentArea from './components/Layout/ContentArea';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import './App.css';
+
+import LandingPage from './LandingPage';
+import LoginPage from './LoginPage';
+import MyPage from './MyPage';
 
 function App() {
   return (
-    <MenuProvider> {/* Wrap your components with the provider */}
-      <div className="app-container">
-        <Header />
-        <div className="content-body">
-          <Sidebar />
-          <ContentArea />
-        </div>
-      </div>
-    </MenuProvider>
+    <Router>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/LoginPage" element={<LoginPage />} />
+      <Route path="/MyPage" element={<MyPage />} />
+    </Routes>
+  </Router>
   );
 }
 
